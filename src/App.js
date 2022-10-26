@@ -23,7 +23,7 @@ function App() {
   }
 
   const createPost = () => {
-    axios.post("https://ffffffffff.onrender.com/articulos", articulo)
+    axios.post("https://blog-server-82an.onrender.com/articulos", articulo)
     .then((res) => {
       alert("SE AGREGO")
     }).catch((err) => {
