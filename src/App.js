@@ -21,7 +21,6 @@ function App() {
       [name]: value,
     })
   }
-
   const createPost = () => {
     axios.post("https://blog-server-82an.onrender.com/articulos", articulo)
     .then((res) => {
@@ -42,7 +41,7 @@ function App() {
           <input placeholder='Description' type="text" name='description' onChange={handleChange}/>
           <input placeholder='Resume' type="text" name='resume' onChange={handleChange}/>
           <input placeholder='Createtime' type="text" name='createtime' onChange={handleChange}/>
-          <button onClick={createPost()}>Agregar</button>
+          <button onClick={() => createPost()}>Agregar</button>
         </div>
       </div>
     </section>
